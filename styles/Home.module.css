@@ -1,0 +1,108 @@
+.home{
+    color:rgb(16, 198, 239);
+    margin-left: 30cm;
+    width: 25%;
+    padding: 20px;
+    font-family:"Jost";
+    font-size:500%;
+      
+}
+.login{
+    color:rgb(12, 81, 228);
+    margin-top:-10cm ;
+    margin-left: 1cm;
+    width: 10%;
+    padding-top: 200px;
+    padding-inline-start: 4cm;
+    font-family:"Jost";
+    font-size: 110%;
+      
+}
+.reme{
+    color:black ;
+    margin-left: 190px;
+    display: flex;
+    flex-direction: row;
+    word-spacing: 0px;
+    font-family:"Jost";
+    font-size:50%;
+}      
+.signup{
+    margin-left:49cm;
+    margin-top: -60px;
+    font-size:larger
+      
+}
+.button {                                                                /*Login Button*/
+    
+   background-color:rgb(56, 56, 189);
+    border-style:hidden;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-family: "Jost";
+    text-align: center;
+    text-decoration:none;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-top: 15px;
+  }
+  .box {
+    background-color:whitesmoke;
+    border-width: 0px;
+    border-radius: 10px;
+    color: black;
+    width: 300px;
+    height: 50px;
+    text-align:left;
+    font-size: 16px;
+  }
+  .button2 {                                               /*login with google*/
+    display: flex;
+    text-decoration: none;
+    flex-direction:row;
+    align-items:center; 
+    font-weight: bold;
+    background-color:whitesmoke;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    color: black;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    font-weight:bold;
+    font-family: "Jost";
+    margin-left: 25%;
+    margin-top: 15px;
+    padding-inline-start:55px;
+  }
+
+  .navg {                                               /*nav bar*/
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:cursive ;
+    margin-left: 12cm;
+    margin-top:-25px;
+    
+  }
+
+  .return {                                                                /*error page Button*/
+    
+    background-color:rgb(56, 56, 189);
+     border-style:hidden;
+     border-radius: 10px;
+     color: white;
+     width: 300px;
+     height: 50px;
+     font-weight: bold;
+     font-family: "Jost";
+     text-align: center;
+     text-decoration:none;
+     font-size: 20px;
+     margin-left: 25%;
+     margin-top: 15px;
+   }
