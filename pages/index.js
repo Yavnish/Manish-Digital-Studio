@@ -1,50 +1,40 @@
 import Head from "next/head"
-import styles from "../styles/Home.module.css"
-import style from "../styles/card.module.css"
 import Image from "next/image"
 import Link from "next/link"
-import "@fontsource/jost"
-import { FcGoogle } from 'react-icons/fc';
-export default function Home() {
-  return (
-    <> 
-    <div style={{
-      position:"absolute",
-      width: "35vw",
-      height:"60vh",
-      marginTop:"100px",
-      marginLeft:"5cm",
-     }
-     }> 
+import styles from "../styles/Home.module.css"
+const home=()=> {
+    return (
+      <div>
+       <Head>
+         <title>Home</title>
+       </Head>
+      
+          <div style={{
+         zIndex: - 1,
+         position:"fixed",
+         marginLeft: "10cm ",
+         marginTop:"-9px",
+         width: "5vw",
+         height:"6vh"  
+        }
+        }> 
       <Image
-        src="/login.webp" 
+        src="/logo.png" 
         alt="login"
         layout="fill"
-         
       />
-      </div> 
-      <Head>
-        <title>Login Page</title>
-      </Head>
-      
-      <div className={style.card}>
-      <div className={style.card2}>
-      <div className={styles.login} >
-      <h1 style={{fontfamily :"Jost", marginLeft:'100px',fontWeight:'bolder'}}>Login</h1>  
-      <label for="Email">Email:</label>
-      <input className={styles.box} id="Email" type="email" placeholder="Email"/>
-      <label for="Password">Password: </label>
-      <input className={styles.box} type="password" placeholder="Password " />
+      </div>      
+      <nav className={styles.navg}>
+        <ul >
+             <a href="/home"style={{marginInline:"15px",textDecoration:'none',color:"white" }}>HOME</a>  
+             <a href="/about"style={{marginInline:"15px",textDecoration:'none',color:"white"}}>ABOUT US</a>
+             <a href="/contact"style={{marginInline:"15px",textDecoration:'none',color:"white"}}>CONTACT US</a>
+             <Link href="/home"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
+         </ul>
+    </nav>
+       
       </div>
-      <div className={styles.reme}><input type="checkbox"/>
-      <h1>Remeber Me</h1>
-      <h1 style={{marginLeft:"60px"}}>Forgot Password?</h1></div>
-      <Link href="/home"><button type="submit" className={styles.button}>Login</button> </Link>  
-      <Link href="/home" style={{textDecoration:'none'}}><button type="button" className={styles.button2}><FcGoogle size={30}></FcGoogle>Login with Google</button> </Link>  
-</div>
-</div>
-    </>
-  )
-}
-
-
+      
+    )
+  }
+export default home

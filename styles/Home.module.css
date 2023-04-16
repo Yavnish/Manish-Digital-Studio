@@ -106,3 +106,17 @@
      margin-left: 25%;
      margin-top: 15px;
    }
+   .button3 {                                                                /*Login Button*/
+
+     background-color:rgb(9, 211, 110);
+     border-radius: 10px;
+     color: white;
+     width: 100px;
+     height: 30px;
+     font-weight: bold;
+     font-family: "Jost";
+     text-align: center;
+     text-decoration:none;
+     font-size: 20px;
+     margin-left: 5cm;
+   }
