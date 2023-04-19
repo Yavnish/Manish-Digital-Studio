@@ -84,7 +84,7 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 30px;
-    font-family:cursive ;
+    font-family:Jost ;
     margin-left: 12cm;
     margin-top:-25px;
     
@@ -120,19 +120,4 @@
      font-size: 20px;
      margin-left: 5cm;
    }
-
-   .dropdown {                                                                /*Login Button*/
-    
-    background-color:rgb(131, 219, 0);
-     border-style:hidden;
-
-     color: white;
-     width: 300px;
-     height: 50px;
-     font-weight: bold;
-     font-family:cursive;
-     text-align: center;
-     font-size: 20px;
-     margin-left: 4cm;
-     margin-top: -40px;
-   }
+   

@@ -28,19 +28,17 @@ const home=()=> {
     
       <nav className={styles.navg}>
         <ul >
-        <div>  
-      <DropdownMenu.Root>
-        <DropdownMenu.Trigger>settings</DropdownMenu.Trigger>
-        <DropdownMenu.Content>
-          <DropdownMenu.Item> New teb</DropdownMenu.Item>
-          <DropdownMenu.Item> New item</DropdownMenu.Item>
-        </DropdownMenu.Content>
-      </DropdownMenu.Root>
-      </div>
              <a href="/home"style={{marginInline:"15px",textDecoration:'none',color:"white" }}>HOME</a>  
-             <a href="/home"style={{marginInline:"15px",textDecoration:'none',color:"white" }}>CATALOGUE</a>  
-             <a href="/about"style={{marginInline:"15px",textDecoration:'none',color:"white"}}>ABOUT US</a>
-             <a href="/contact"style={{marginInline:"15px",textDecoration:'none',color:"white"}}>CONTACT US</a>
+             <DropdownMenu.Root>
+              <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
+               <DropdownMenu.Content className="content">
+                <DropdownMenu.Item className="item" > Frames</DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > Printing</DropdownMenu.Item>
+              </DropdownMenu.Content>
+             </DropdownMenu.Root>
+            
+             <a href="/about"style={{marginInline:"20px",textDecoration:'none',color:"white"}}>ABOUT US</a>
+             <a href="/contact"style={{marginInline:"20px",textDecoration:'none',color:"white"}}>CONTACT US</a>
              <Link href="/home"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
          </ul>
     </nav>

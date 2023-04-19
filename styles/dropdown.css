@@ -1,0 +1,29 @@
+.trigger{
+     background-color:rgb(60, 1, 60) ;
+     border-style:hidden;
+     color: white;
+     font-weight: bold;
+     font-stretch:wider;
+     font-family:Jost;
+     text-align: center;
+     text-decoration:none;
+     font-size: 30px;
+     
+}
+.trigger:hover{
+     background-color: rgb(0, 0, 0);
+}
+
+.content{
+     color: white;
+     border-radius: 6px;
+     box-shadow: 0 0 20px 0 rgba(0 0 0 / 0.1);
+}
+
+.item{
+     padding: 5px 10px;
+}
+
+.item:focus{
+     background-color: purple;
+}
