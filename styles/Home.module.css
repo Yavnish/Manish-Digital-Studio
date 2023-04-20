@@ -80,14 +80,24 @@
     padding-inline-start:55px;
   }
 
-  .navg {                                               /*nav bar*/
-    text-decoration: none;
+  .navg {                                        /*Nav bar*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: bold;
     font-size: 30px;
     font-family:Jost ;
     margin-left: 12cm;
-    margin-top:-25px;
-    
+    margin-top:-20px;
+  }
+
+  .navh{
+        color: white;
+        margin-inline: 15px;
+        text-decoration: none;
+  }
+  .navh:hover{
+    color: rgb(255, 0, 255);
   }
 
   .return {                                                                /*error page Button*/
@@ -106,7 +116,7 @@
      margin-left: 25%;
      margin-top: 15px;
    }
-   .button3 {                                                                /*Login Button*/
+   .button3 {                                                                /*Sign in*/
 
      background-color:rgb(9, 211, 110);
      border-radius: 10px;
@@ -115,9 +125,7 @@
      height: 30px;
      font-weight: bold;
      font-family: "Jost";
-     text-align: center;
-     text-decoration:none;
-     font-size: 20px;
-     margin-left: 5cm;
+     font-size: 20px; 
+     margin-inline: 20px;
    }
    

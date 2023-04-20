@@ -5,7 +5,7 @@ import style from "../styles/card.module.css"
 import Image from "next/image"
 import Link from "next/link"
 import "@fontsource/jost"
-import { FcGoogle } from 'react-icons/fc';
+import { FcGoogle} from 'react-icons/fc';
 export default function Home() {
   return (
     <> 
