@@ -80,7 +80,7 @@
     padding-inline-start:55px;
   }
 
-  .navg {                                        /*Nav bar*/
+  .navg {                                               /*Nav bar*/
     display: flex;
     flex-direction: row;
     align-items: center;

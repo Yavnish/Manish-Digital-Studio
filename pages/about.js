@@ -1,6 +1,8 @@
 import Head from "next/head"
 import Image from "next/image"
-import "@fontsource/jost"
+import Link from "next/link"
+import { HiOutlineShoppingCart} from 'react-icons/hi';
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from "../styles/Home.module.css"
 const home=()=> {
     return (
@@ -8,42 +10,11 @@ const home=()=> {
        <Head>
          <title>Home</title>
        </Head>
-      <div>
-       <div style={{
-     zIndex: - 1,
-     position:"fixed",
-     width: "110vw",
-     height:"110vh",
-     marginTop:"-10px",
-     marginLeft:"-10px" 
-    }
-    }> 
-      <Image
-        src="/a.jpg" 
-        alt="login"
-        layout="fill"
-      />
-      </div>
-      <div style={{
+          <div style={{
          zIndex: - 1,
          position:"fixed",
-         marginLeft: "-7px",
-         marginTop:"-9px",
-         width: "100vw",
-         height:"6vh"  
-        }
-        }> 
-      <Image
-        src="/a.jpeg" 
-        alt="login"
-        layout="fill"
-      />
-      </div> 
-      <div style={{
-         zIndex: - 1,
-         position:"fixed",
-         marginLeft: "-7px",
-         marginTop:"-9px",
+         marginLeft: "1cm ",
+         marginTop:"20px",
          width: "5vw",
          height:"6vh"  
         }
@@ -53,18 +24,30 @@ const home=()=> {
         alt="login"
         layout="fill"
       />
-      </div>      
+      </div>  
+    
       <nav className={styles.navg}>
         <ul >
-             <a href="/home"style={{marginInline:"15px",textDecoration:'none',color:"black" }}>Home</a>  
-             <a href="/about"style={{marginInline:"15px",textDecoration:'none',color:"black"}}>About Us</a>
-             <a href="/contact"style={{marginInline:"15px",textDecoration:'none',color:"black"}}>Contact Us</a>
+             <a href="/"  className={styles.navh} >HOME</a>  
+             <DropdownMenu.Root>
+              <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
+               <DropdownMenu.Content className="content">
+                <DropdownMenu.Item className="item" > Frames</DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > Printing</DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > Fucking</DropdownMenu.Item>
+              </DropdownMenu.Content>
+             </DropdownMenu.Root>
+             <a href="/about" className={styles.navh} >ABOUT US</a>
+             <a href="/contact" className={styles.navh} >CONTACT US</a> 
          </ul>
-    </nav>
-      <div className={styles.signup}><a href="/"><button type="button">Login</button> </a></div>
-      <h1 style={{marginLeft:"700px",fontSize:"100px"}}>hii this is about us</h1>
-      </div>
-      </div>
+    </nav>   
+           <div style={{display:'flex' , flexDirection:'row' , alignItems:'center' ,marginLeft:'15cm' , marginTop:'-64px'}}>      
+             <Link href="/cart" style={{marginLeft:'30cm'}}><HiOutlineShoppingCart size={30} color="white" ></HiOutlineShoppingCart></Link>
+             <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
+            </div>  
+               <h1 style={{marginLeft:"700px",fontSize:"100px"}}>hii this is about us</h1>
+           </div>
+      
     )
   }
 export default home

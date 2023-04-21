@@ -45,7 +45,8 @@ const home=()=> {
              <Link href="/cart" style={{marginLeft:'30cm'}}><HiOutlineShoppingCart size={30} color="white" ></HiOutlineShoppingCart></Link>
              <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
             </div>  
-      </div>
+               <h1 style={{marginLeft:"700px",fontSize:"100px"}}>you dont have anything in cart</h1>
+           </div>
       
     )
   }
