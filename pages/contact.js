@@ -32,9 +32,9 @@ const home=()=> {
              <DropdownMenu.Root>
               <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
                <DropdownMenu.Content className="content">
-                <DropdownMenu.Item className="item" > <Link href="/cart">Frames</Link> </DropdownMenu.Item>
-                <DropdownMenu.Item className="item" > <Link href="/cart">Printing</Link> </DropdownMenu.Item>
-                <DropdownMenu.Item className="item" > <Link href="/cart">Fucking</Link> </DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
               </DropdownMenu.Content>
              </DropdownMenu.Root>
              <a href="/about" className={styles.navh} >ABOUT US</a>

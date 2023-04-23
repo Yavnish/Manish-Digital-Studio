@@ -32,15 +32,15 @@ const home=()=> {
              <DropdownMenu.Root>
               <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
                <DropdownMenu.Content className="content">
-                <DropdownMenu.Item className="item" > Frames</DropdownMenu.Item>
-                <DropdownMenu.Item className="item" > Printing</DropdownMenu.Item>
-                <DropdownMenu.Item className="item" > Fucking</DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
+                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
               </DropdownMenu.Content>
              </DropdownMenu.Root>
              <a href="/about" className={styles.navh} >ABOUT US</a>
              <a href="/contact" className={styles.navh} >CONTACT US</a> 
          </ul>
-    </nav>   
+    </nav>     
            <div style={{display:'flex' , flexDirection:'row' , alignItems:'center' ,marginLeft:'15cm' , marginTop:'-64px'}}>      
              <Link href="/cart" style={{marginLeft:'30cm'}}><HiOutlineShoppingCart size={30} color="white" ></HiOutlineShoppingCart></Link>
              <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
