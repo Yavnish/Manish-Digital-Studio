@@ -14,7 +14,7 @@ const home=()=> {
           <div style={{
          zIndex: - 1,
          position:"absolute",
-         marginLeft: "1cm ",
+         marginLeft: "2cm ",
          marginTop:"20px",
          width: "5vw",
          height:"6vh"  
@@ -27,8 +27,9 @@ const home=()=> {
       />
       </div>  
     
-      <nav className={styles.navg}>
+      <nav className={styles.navg}> 
         <ul >
+             <a className={styles.navh} style={{marginLeft:'-300px',marginRight:'100px'}} >Manish Digital Studio</a>
              <a href="/"  className={styles.navh} >HOME</a>  
              <DropdownMenu.Root>
               <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
