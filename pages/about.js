@@ -4,8 +4,8 @@ import Link from "next/link"
 import { HiOutlineShoppingCart} from 'react-icons/hi';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from "../styles/Home.module.css"
-const home=()=> {
-    return (
+const home=()=> { 
+    return ( 
       <div>
        <Head>
          <title>Home</title>

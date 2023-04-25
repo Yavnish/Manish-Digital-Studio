@@ -2,6 +2,7 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import { HiOutlineShoppingCart} from 'react-icons/hi';
+import { FaArrowCircleRight} from 'react-icons/fa';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from "../styles/Home.module.css"
 import style from "../styles/card.module.css"
@@ -32,8 +33,8 @@ const home=()=> {
              <a className={styles.navh} style={{marginLeft:'-300px',marginRight:'100px'}} >Manish Digital Studio</a>
              <a href="/"  className={styles.navh} >HOME</a>  
              <DropdownMenu.Root>
-              <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
-               <DropdownMenu.Content className="content">
+              <DropdownMenu.Trigger className="trigger" >CATALOGUE</DropdownMenu.Trigger>
+               <DropdownMenu.Content >
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
@@ -48,7 +49,7 @@ const home=()=> {
              <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
             </div>  
   
-         <video autoPlay loop muted style={{ marginTop:'20px',marginLeft:'-20px',width: '1930px', height: '500px', objectFit:'fill' }}>
+         <video autoPlay loop muted style={{ marginTop:'20px',marginLeft:'-20px',width: '1915px', height: '500px', objectFit:'fill' }}>
            <source src="/video.mp4"/>                       
          </video>
        
