@@ -40,8 +40,8 @@ const home=()=> {
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
               </DropdownMenu.Content>
              </DropdownMenu.Root>
-             <a href="/about" className={styles.navh} >ABOUT US</a>
-             <a href="/contact" className={styles.navh} >CONTACT US</a> 
+             <Link href="/about" className={styles.navh} >ABOUT US</Link>
+             <Link href="/contact" className={styles.navh} >CONTACT US</Link> 
          </ul>
     </nav>   
            <div style={{display:'flex' , flexDirection:'row' , alignItems:'center' ,marginLeft:'15cm' , marginTop:'-64px'}}>      
