@@ -54,9 +54,9 @@ const home=()=> {
          </video>
        
       <div style={{ display:'flex', marginLeft:'100px' , marginTop:'100px'}}> 
-         <div className={style.card3}>  <Link href="/cart"><button type="submit" className={styles.button4}>View</button> </Link> </div>
-         <div className={style.card3}>  <Link href="/cart"><button type="submit" className={styles.button4}>View</button> </Link> </div>
-         <div className={style.card3}>  <Link href="/cart"><button type="submit" className={styles.button4}>View</button> </Link> </div>       
+         <div className={style.card3}>  <Link href="/cart"><button type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></button> </Link> </div>
+         <div className={style.card3}>  <Link href="/cart"><button type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></button> </Link> </div>
+         <div className={style.card3}>  <Link href="/cart"><button type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></button> </Link> </div>       
       </div>
     </div>
       
