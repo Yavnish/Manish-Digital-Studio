@@ -130,19 +130,15 @@
    }
    
    .button4 {                                                              
-     
+     color: white;
+     text-decoration: none;
      display: flex;
      flex-direction:row;
      align-items:center; 
-     background-color:purple;
-     border-style:hidden;
-     border-radius: 10px;
-     color: white;
      font-weight: bold;
      font-family: "Jost";
      text-align: center;
-     text-decoration:none;
      font-size: 30px;
-     margin-left: 130px;
+     margin-left: 135px;
      margin-top: 300px;
    }
