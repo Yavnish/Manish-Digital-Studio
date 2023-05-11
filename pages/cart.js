@@ -1,22 +1,27 @@
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
+import "@fontsource/roboto-slab"
 import { HiOutlineShoppingCart} from 'react-icons/hi';
+import { FaArrowCircleRight} from 'react-icons/fa';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from "../styles/Home.module.css"
+import style from "../styles/card.module.css"
 const home=()=> {
-    return (
-      <div>
+   return (
+    <div>
        <Head>
          <title>Home</title>
        </Head>
-          <div style={{
+   
+    
+      <nav className={styles.navbar}> 
+      
+        <div style={{
          zIndex: - 1,
-         position:"fixed",
-         marginLeft: "2cm ",
-         marginTop:"20px",
-         width: "5vw",
-         height:"6vh"  
+         position:"relative",
+         width: "45px",
+         height:"30px"  
         }
         }> 
       <Image
@@ -25,27 +30,21 @@ const home=()=> {
         layout="fill"
       />
       </div>  
-    
-      <nav className={styles.navg}>
-        <ul >
-             <a className={styles.navh} style={{marginLeft:'-300px',marginRight:'100px'}} >Manish Digital Studio</a>
-             <a href="/"  className={styles.navh} >HOME</a>  
+             <a className={styles.nave}>Manish Digital Studio</a>
+             <a href="/" className={styles.nave} style={{marginLeft:'3cm'}}>HOME</a>  
              <DropdownMenu.Root>
-              <DropdownMenu.Trigger className="trigger">CATALOGUE</DropdownMenu.Trigger>
-               <DropdownMenu.Content className="content">
+              <DropdownMenu.Trigger className="trigger" >CATALOGUE</DropdownMenu.Trigger>
+               <DropdownMenu.Content >
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
               </DropdownMenu.Content>
              </DropdownMenu.Root>
-             <a href="/about" className={styles.navh} >ABOUT US</a>
-             <a href="/contact" className={styles.navh} >CONTACT US</a> 
-         </ul>
-    </nav>     
-           <div style={{display:'flex' , flexDirection:'row' , alignItems:'center' ,marginLeft:'15cm' , marginTop:'-64px'}}>      
-             <Link href="/cart" style={{marginLeft:'30cm'}}><HiOutlineShoppingCart size={30} color="white" ></HiOutlineShoppingCart></Link>
-             <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
-            </div>  
+             <Link href="/about" className={styles.nave}>ABOUT US</Link>
+             <Link href="/contact" className={styles.nave}>CONTACT US</Link> 
+             <Link href="/cart" className={styles.nave} style={{marginLeft:'11cm',marginRight:'0px'}}><HiOutlineShoppingCart fontSize={'25px'}></HiOutlineShoppingCart></Link>
+             <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>   
+      </nav>  
                <h1 style={{marginLeft:"700px",fontSize:"100px"}}>you dont have anything in cart</h1>
            </div>
       
