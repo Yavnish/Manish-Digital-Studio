@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css"
 import style from "../styles/card.module.css"
 import Image from "next/image"
 import Link from "next/link"
-import "@fontsource/jost"
+import "@fontsource/roboto-slab"
 import { FcGoogle} from 'react-icons/fc';
 export default function Home() {
   return (

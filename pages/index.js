@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
+import "@fontsource/roboto-slab"
 import { HiOutlineShoppingCart} from 'react-icons/hi';
 import { FaArrowCircleRight} from 'react-icons/fa';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
@@ -12,13 +13,15 @@ const home=()=> {
        <Head>
          <title>Home</title>
        </Head>
-          <div style={{
+   
+    
+      <nav className={styles.navbar}> 
+      
+        <div style={{
          zIndex: - 1,
-         position:"absolute",
-         marginLeft: "2cm ",
-         marginTop:"20px",
-         width: "5vw",
-         height:"6vh"  
+         position:"relative",
+         width: "45px",
+         height:"30px"  
         }
         }> 
       <Image
@@ -27,11 +30,8 @@ const home=()=> {
         layout="fill"
       />
       </div>  
-    
-      <nav className={styles.navg}> 
-        <ul >
-             <a className={styles.navh} style={{marginLeft:'-300px',marginRight:'100px'}} >Manish Digital Studio</a>
-             <a href="/"  className={styles.navh} >HOME</a>  
+             <a className={styles.nave}>Manish Digital Studio</a>
+             <a href="/" className={styles.nave} style={{marginLeft:'3cm'}}>HOME</a>  
              <DropdownMenu.Root>
               <DropdownMenu.Trigger className="trigger" >CATALOGUE</DropdownMenu.Trigger>
                <DropdownMenu.Content >
@@ -40,20 +40,16 @@ const home=()=> {
                 <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
               </DropdownMenu.Content>
              </DropdownMenu.Root>
-             <Link href="/about" className={styles.navh} >ABOUT US</Link>
-             <Link href="/contact" className={styles.navh} >CONTACT US</Link> 
-         </ul>
-    </nav>   
-           <div style={{display:'flex' , flexDirection:'row' , alignItems:'center' ,marginLeft:'15cm' , marginTop:'-64px'}}>      
-             <Link href="/cart" style={{marginLeft:'30cm'}}><HiOutlineShoppingCart size={30} color="white" ></HiOutlineShoppingCart></Link>
-             <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>  
-            </div>  
-  
-         <video autoPlay loop muted style={{ marginTop:'20px',marginLeft:'-20px',width: '1915px', height: '500px', objectFit:'fill' }}>
+             <Link href="/about" className={styles.nave}>ABOUT US</Link>
+             <Link href="/contact" className={styles.nave}>CONTACT US</Link> 
+             <Link href="/cart" className={styles.nave} style={{marginLeft:'11cm',marginRight:'0px'}}><HiOutlineShoppingCart fontSize={'25px'}></HiOutlineShoppingCart></Link>
+             <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>   
+      </nav>  
+         <video autoPlay loop muted style={{ marginTop:'10px',marginLeft:'-20px',width: '1915px', height: '500px', objectFit:'fill' }}>
            <source src="/video.mp4"/>                       
          </video>
        
-      <div style={{ display:'flex', marginLeft:'100px' , marginTop:'100px'}}> 
+      <div style={{ display:'flex', marginLeft:'250px' , marginTop:'100px'}}> 
          <div className={style.card3}>  <Link href="/cart" type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></Link> </div>
          <div className={style.card3}>  <Link href="/cart" type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></Link> </div>
          <div className={style.card3}>  <Link href="/cart" type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight> </Link> </div>       
@@ -61,5 +57,5 @@ const home=()=> {
     </div>
       
     )
-  }
+  } 
 export default home

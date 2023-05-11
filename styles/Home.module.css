@@ -80,23 +80,26 @@
     padding-inline-start:55px;
   }
 
-  .navg {                                               /*Nav bar*/
+  .navbar {                                               /*Nav bar*/
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: bold;
-    font-size: 30px;
-    font-family:Jost ;
-    margin-left: 12cm;
-    margin-top:-20px;
+    font-size: 20px;
+    font-family:Roboto Slab;
+    margin-left: 10cm;
+    
   }
 
-  .navh{
+  .nave{                                                /*nav bar elements*/  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         color: white;
-        margin-inline: 15px;
+        margin-inline: 20px;
         text-decoration: none;
   }
-  .navh:hover{
+  .nave:hover{
     color: rgb(255, 0, 255);
   }
 
@@ -129,16 +132,15 @@
      margin-inline: 20px;
    }
    
-   .button4 {                                                              
+   .button4 {                                                         /*view button in card*/     
      color: white;
      text-decoration: none;
      display: flex;
      flex-direction:row;
      align-items:center; 
      font-weight: bold;
-     font-family: "Jost";
-     text-align: center;
-     font-size: 30px;
+     font-family: "Roboto Slab";
+     font-size: 25px;
      margin-left: 135px;
      margin-top: 300px;
    }

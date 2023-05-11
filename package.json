@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/jost": "^4.5.13",
+    "@fontsource/roboto-slab": "^4.5.11",
     "@next/font": "13.1.2",
     "@radix-ui/react-dropdown-menu": "^2.0.4",
     "eslint": "8.32.0",
