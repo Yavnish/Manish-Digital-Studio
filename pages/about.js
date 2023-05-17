@@ -1,52 +1,18 @@
 import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
 import "@fontsource/roboto-slab"
-import { HiOutlineShoppingCart} from 'react-icons/hi';
-import { FaArrowCircleRight} from 'react-icons/fa';
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
-import styles from "../styles/Home.module.css"
-import style from "../styles/card.module.css"
+import Navbar from "./Navbar"
 const home=()=> {
    return (
     <div>
        <Head>
          <title>About</title>
        </Head>
-   
+          <>
+            <Navbar/>
+          </>
     
-      <nav className={styles.navbar}> 
-      
-        <div style={{
-         zIndex: - 1,
-         position:"relative",
-         width: "45px",
-         height:"30px"  
-        }
-        }> 
-      <Image
-        src="/logo.png" 
-        alt="login"
-        layout="fill"
-      />
-      </div>  
-             <a className={styles.nave}>Manish Digital Studio</a>
-             <a href="/" className={styles.nave} style={{marginLeft:'3cm'}}>HOME</a>  
-             <DropdownMenu.Root>
-              <DropdownMenu.Trigger className="trigger" >CATALOGUE</DropdownMenu.Trigger>
-               <DropdownMenu.Content >
-                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
-                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
-                <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Fucking</Link> </DropdownMenu.Item>
-              </DropdownMenu.Content>
-             </DropdownMenu.Root>
-             <Link href="/about" className={styles.nave}>ABOUT US</Link>
-             <Link href="/contact" className={styles.nave}>CONTACT US</Link> 
-             <Link href="/cart" className={styles.nave} style={{marginLeft:'11cm',marginRight:'0px'}}><HiOutlineShoppingCart fontSize={'25px'}></HiOutlineShoppingCart></Link>
-             <Link href="/login"><button type="submit" className={styles.button3}>Sign-In</button> </Link>   
-      </nav>  
-               <h1 style={{marginLeft:"100px",fontSize:"100px", color:'white'}}>About Us</h1>
-               <p style={{marginLeft:"100px",fontSize:"27px", color:'white'}}>Welcome to Manish Digital Studio, your one-stop-shop for all your photography and printing needs!</p>
+             <h1 style={{marginLeft:"100px",fontSize:"100px", color:'white'}}>About Us</h1>
+               <h style={{marginLeft:"100px",fontSize:"30px", color:'white'}}>Welcome to Manish Digital Studio, your one-stop-shop for all your photography and printing needs!</h>
                <p style={{marginLeft:"100px",fontSize:"25px", color:'white'}}>We are a team of passionate photographers who love capturing the special moments of your life. Our<br/>
                 team consists of experienced professionals who specialize in wedding photography and videography,<br/>
                 album designing, and wedding video editing. We take pride in our work and are committed to delivering <br/>

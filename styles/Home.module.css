@@ -104,8 +104,7 @@
   }
 
   .return {                                                                /*error page Button*/
-    
-    background-color:rgb(56, 56, 189);
+     background-color:rgb(56, 56, 189);
      border-style:hidden;
      border-radius: 10px;
      color: white;
@@ -129,7 +128,6 @@
      font-weight: bold;
      font-family: "Jost";
      font-size: 20px; 
-     margin-inline: 20px;
    }
    
    .button4 {                                                         /*view button in card*/     
