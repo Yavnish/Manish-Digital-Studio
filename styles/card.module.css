@@ -55,8 +55,11 @@
     width: 9cm;
     height:9cm;
     margin-inline: 80px;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
+=======
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
 
   
   }
@@ -67,9 +70,12 @@
     transition: 0.3s;
     background:rgb(255, 255, 255);
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 >>>>>>> 3438392abf1dc8ea2678487d72f5c535e59a933f
+=======
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
   }
  
   .card4:hover {
@@ -85,7 +91,10 @@
     border-radius: 1cm;
     border-style:double; 
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-weight: bold;
 =======
 >>>>>>> 3438392abf1dc8ea2678487d72f5c535e59a933f
+=======
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
   }

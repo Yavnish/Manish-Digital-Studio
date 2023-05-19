@@ -21,12 +21,17 @@ function Navbar() {
            <DropdownMenu.Trigger className="trigger" >CATALOGUE</DropdownMenu.Trigger>
             <DropdownMenu.Content >
 <<<<<<< HEAD
+<<<<<<< HEAD
              <DropdownMenu.Item className="item" > <Link href="/frame" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
              <DropdownMenu.Item className="item" > <Link href="/print" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
 =======
              <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
              <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
 >>>>>>> 3438392abf1dc8ea2678487d72f5c535e59a933f
+=======
+             <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
+             <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
            </DropdownMenu.Content>
           </DropdownMenu.Root>
           <Link href="/about" className={styles.nave}>ABOUT</Link>

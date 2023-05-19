@@ -89,7 +89,10 @@
     font-family:Roboto Slab;
     margin-left: 10cm;
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
   }
 
   .nave{                                                /*nav bar elements*/  
@@ -141,6 +144,7 @@
      font-family: "Roboto Slab";
      font-size: 25px;
      margin-left: 135px;
+<<<<<<< HEAD
      
    }
 
@@ -170,3 +174,7 @@
     width: 10vw;
     height: 20vh;
   }
+=======
+     margin-top: 300px;
+   }
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602

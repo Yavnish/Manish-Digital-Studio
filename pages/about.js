@@ -1,6 +1,9 @@
 import Head from "next/head"
+<<<<<<< HEAD
 import Image from "next/image"
 import Link from "next/link"
+=======
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
 import "@fontsource/roboto-slab"
 import Navbar from "./Navbar"
 const home=()=> {
@@ -9,6 +12,7 @@ const home=()=> {
        <Head>
          <title>About</title>
        </Head>
+<<<<<<< HEAD
    
     
       <nav className={styles.navbar}> 
@@ -43,6 +47,14 @@ const home=()=> {
       </nav>  
                <h1 style={{marginLeft:"100px",fontSize:"100px", color:'white'}}>About Us</h1>
                <p style={{marginLeft:"100px",fontSize:"27px", color:'white'}}>Welcome to Manish Digital Studio, your one-stop-shop for all your photography and printing needs!</p>
+=======
+          <>
+            <Navbar/>
+          </>
+    
+             <h1 style={{marginLeft:"100px",fontSize:"100px", color:'white'}}>About Us</h1>
+               <h style={{marginLeft:"100px",fontSize:"30px", color:'white'}}>Welcome to Manish Digital Studio, your one-stop-shop for all your photography and printing needs!</h>
+>>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
                <p style={{marginLeft:"100px",fontSize:"25px", color:'white'}}>We are a team of passionate photographers who love capturing the special moments of your life. Our<br/>
                 team consists of experienced professionals who specialize in wedding photography and videography,<br/>
                 album designing, and wedding video editing. We take pride in our work and are committed to delivering <br/>
