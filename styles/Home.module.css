@@ -80,29 +80,32 @@
     padding-inline-start:55px;
   }
 
-  .navg {                                               /*Nav bar*/
+  .navbar {                                               /*Nav bar*/
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: bold;
-    font-size: 30px;
-    font-family:Jost ;
-    margin-left: 12cm;
-    margin-top:-20px;
+    font-size: 20px;
+    font-family:Roboto Slab;
+    margin-left: 10cm;
+    
+    
   }
 
-  .navh{
+  .nave{                                                /*nav bar elements*/  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         color: white;
-        margin-inline: 15px;
+        margin-inline: 20px;
         text-decoration: none;
   }
-  .navh:hover{
+  .nave:hover{
     color: rgb(255, 0, 255);
   }
 
   .return {                                                                /*error page Button*/
-    
-    background-color:rgb(56, 56, 189);
+     background-color:rgb(56, 56, 189);
      border-style:hidden;
      border-radius: 10px;
      color: white;
@@ -126,23 +129,44 @@
      font-weight: bold;
      font-family: "Jost";
      font-size: 20px; 
-     margin-inline: 20px;
    }
    
-   .button4 {                                                              
-     
+   .button4 {                                                         /*view button in card*/     
+     color: white;
+     text-decoration: none;
      display: flex;
      flex-direction:row;
      align-items:center; 
-     background-color:purple;
-     border-style:hidden;
-     border-radius: 10px;
-     color: white;
      font-weight: bold;
-     font-family: "Jost";
-     text-align: center;
-     text-decoration:none;
-     font-size: 30px;
-     margin-left: 130px;
-     margin-top: 300px;
+     font-family: "Roboto Slab";
+     font-size: 25px;
+     margin-left: 135px;
+     
    }
+
+   .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullscreen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .thumbnail {
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 10vw;
+    height: 20vh;
+  }

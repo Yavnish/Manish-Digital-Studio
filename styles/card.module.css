@@ -23,7 +23,7 @@
   }
   .card2 {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 0Zpx 0px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     background: white;
   }
@@ -45,21 +45,47 @@
   }
   .card3 {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 0Zpx 0px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(45, 1, 47, 0.2);
     transition: 0.3s;
-    background:purple;
+    background:rgb(83, 4, 83);
   }
+ 
+  /* Add some padding inside the card container */
+  .card3 {
+    width: 9cm;
+    height:9cm;
+    margin-inline: 80px;
+    display: flex;
+    flex-direction: column;
+
   
-  /* On mouse-over, add a deeper shadow */
-  .card3:hover {
+  }
+
+  .card4 {                                                      /*Contact us */                          
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background:rgb(255, 255, 255);
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 3438392abf1dc8ea2678487d72f5c535e59a933f
+  }
+ 
+  .card4:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   /* Add some padding inside the card container */
-  .card3 {
-    width: 10cm;
-    height:10cm;
-    margin-inline: 100px;
-    border-radius: 20px;
-  
+  .card4 {
+
+    width: 20vw;
+    height:30vh;
+    margin-inline: 20px;
+    border-radius: 1cm;
+    border-style:double; 
+<<<<<<< HEAD
+    font-weight: bold;
+=======
+>>>>>>> 3438392abf1dc8ea2678487d72f5c535e59a933f
   }
