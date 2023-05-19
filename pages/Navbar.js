@@ -22,10 +22,6 @@ function Navbar() {
             <DropdownMenu.Content >
              <DropdownMenu.Item className="item" > <Link href="/frame" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
              <DropdownMenu.Item className="item" > <Link href="/print" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
-             <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
-             <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
-             <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Frames</Link> </DropdownMenu.Item>
-             <DropdownMenu.Item className="item" > <Link href="/cart" style={{textDecoration:'none', color:'white'}}>Printing</Link> </DropdownMenu.Item>
            </DropdownMenu.Content>
           </DropdownMenu.Root>
           <Link href="/about" className={styles.nave}>ABOUT</Link>

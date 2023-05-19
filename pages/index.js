@@ -17,7 +17,6 @@ const home=()=> {
          </video>
        
       <div style={{ display:'flex', marginLeft:'250px' , marginTop:'100px'}}> 
-<<<<<<< HEAD
          <div className={style.card3}>
              <h style={{ marginTop:'20%',fontSize:'40px',color:'white',marginLeft:'15%' }}>Wedding Photography & Videography</h> 
              <Link href="/cart" type="submit" className={styles.button4 } style={{marginTop:'20%'}}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></Link> 
@@ -30,11 +29,6 @@ const home=()=> {
              <h style={{ marginTop:'30%',fontSize:'40px',color:'white',marginLeft:'25%' }}>Our Team</h> 
              <Link href="/cart" type="submit" className={styles.button4} style={{marginTop:'37%'}}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></Link> 
          </div>
-=======
-         <div className={style.card3}>  <Link href="/cart" type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></Link> </div>
-         <div className={style.card3}>  <Link href="/cart" type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight></Link> </div>
-         <div className={style.card3}>  <Link href="/cart" type="submit" className={styles.button4}>View<FaArrowCircleRight size={30}></FaArrowCircleRight> </Link> </div>       
->>>>>>> 6d4142034d827d39d044f07d65ca610a9517c602
       </div>
     </div>
       
