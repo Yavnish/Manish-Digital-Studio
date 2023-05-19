@@ -81,8 +81,6 @@ function frame() {
            <Picture src="/Frames/Size.jpg"/>
           </div>               
         </div> 
-        
-
     </> 
   )
 }
